@@ -2,3 +2,51 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #000;
+}
+.nav{
+    height: 80px;
+    background-color: #212121;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    
+}
+.navlist{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left{
+ width: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.right{
+width: 20%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+#logosm{
+    width: 200px;
+}
+li{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#search{
+    width:20px;
+}
