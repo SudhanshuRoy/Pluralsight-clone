@@ -2,3 +2,100 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #000;
+}
+.nav{
+    height: 80px;
+    background-color: #212121;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    
+}
+.navlist{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left{
+ width: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.right{
+width: 20%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+#logosm{
+    width: 200px;
+}
+li{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#search{
+    width:20px;
+}
+
+.sec1{
+    height: 65vh;
+    width: 100vw;
+    border: 2px solid red;
+    
+    background-image: url('../img/hero-illustration.png');
+    background-size: 100%;
+    margin-top: 80px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+
+}
+.tryfree{
+    border:1px solid #fff;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.99);
+    padding: 9px 17px;
+}
+.tryfree:hover{
+    border:2px solid #fff ;
+}
+.viewplans{
+    color: #ffffff;
+    font: 15px"ps Commons Bold";
+    background: #EC008C;
+    margin: 0px 20px 20px 0px;
+    padding: 7px 15px;
+}
+.sec1 h1{
+    font: 36px "ps Commons Bold";
+}
+.sec2{
+    border: 1px solid blue;
+    height: 20vh; 
+   text-align: center;
+   margin-top: 20px;
+}
+.sec2>div>img{
+    margin: 30px;
+}
+.sec2>div>p{
+color: #ffffff;
+margin-bottom: -15px;
+}
