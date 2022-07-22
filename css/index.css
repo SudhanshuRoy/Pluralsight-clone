@@ -54,7 +54,7 @@ a{
 .sec1{
     height: 65vh;
     width: 100vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
     background-image: url('../img/hero-illustration.png');
     background-size: 100%;
@@ -65,29 +65,43 @@ a{
     justify-content: end;
     align-items: center;
     gap: 20px;
+    margin-bottom: 80px;
+    font-size: 22px;
 
 }
-.tryfree{
+.sec1>div>h1{
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+
+.tryfree,.tryfree0{
+    font: 20px"ps Commons Bold";
     border:1px solid #fff;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.99);
-    padding: 9px 17px;
+    padding: 15px 30px;
 }
-.tryfree:hover{
+.tryfree0{
+    padding: 8px 20px;
+    font: 16px"ps Commons Bold";
+}
+.tryfree:hover,.tryfree0:hover{
     border:2px solid #fff ;
 }
 .viewplans{
     color: #ffffff;
-    font: 15px"ps Commons Bold";
+    font: 20px"ps Commons Bold";
     background: #EC008C;
     margin: 0px 20px 20px 0px;
-    padding: 7px 15px;
+    padding: 12px 17px;
 }
 .sec1 h1{
     font: 36px "ps Commons Bold";
 }
 .sec2{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 20vh; 
    text-align: center;
    margin-top: 20px;
@@ -99,4 +113,67 @@ a{
 color: #ffffff;
 margin-bottom: -15px;
 }
-
+.singleLine{
+    margin: 20px auto;
+    width: 0%;
+    height: 140px;
+    /* border-width: 3px; */
+    border-style: solid;
+    border-image: linear-gradient( to bottom, #EC008C, #F15B2A, rgba(0, 0, 0, 0) ) 1 100%;
+}
+.text{
+    color: white;
+    text-align: left;
+    /* margin: 20px; */
+    line-height: 40px;
+    margin-left: 16%;
+    margin-bottom: 20px;
+}
+.headLower{
+width: 70%;
+margin: auto;
+/* border: 2px solid aqua; */
+color: #ffffff;
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+.headLower>a>div{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    background: #222222;
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 10%);
+    
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.lowerChild{
+    display: flex;
+    padding: 20px;
+    
+}
+.innerImg{
+    width: 100%;
+    margin: -40px;
+   display: inline;
+}
+.innerText{
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+}
+h5,.text>p{
+    color: #e40084;
+}
+#takeAlook{
+    color: #fff;
+    background-color: rgba(1, 1, 1, 0.1);
+    font-weight: 500;
+    border: 0px;
+}
+#takeAlook:hover{
+    font-weight: 900;
+}
