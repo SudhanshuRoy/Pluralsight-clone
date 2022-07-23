@@ -6,7 +6,7 @@ body{
     background-color: #000;
 }
 .nav{
-    height: 80px;
+    height: auto;
     background-color: #212121;
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
     position: fixed;
@@ -20,18 +20,21 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    
 }
 .left{
  width: 50%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+gap: 20px;
 }
 .right{
 width: 20%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+gap: 20px;
 
 }
 
@@ -48,12 +51,12 @@ a{
 
 
 #search{
-    width:20px;
+    width:30px;
 }
 
 .sec1{
-    height: 65vh;
-    width: 100vw;
+    /* height: 65vh; */
+    /* width: 100vw; */
     /* border: 2px solid red; */
     
     background-image: url('../img/hero-illustration.png');
@@ -69,12 +72,18 @@ a{
     font-size: 22px;
 
 }
-.sec1>div>h1{
+.sec1>div{
+text-align: center;
+margin-top: 160px;
+}
+.sec1>div>div>h1{
     font-weight: 900;
     font-size: 60px;
     margin-bottom: 30px;
 }
-
+.sec1>div>div>p{
+    margin-bottom: 30px;
+}
 
 .tryfree,.tryfree0{
     font: 20px"ps Commons Bold";
@@ -120,6 +129,8 @@ margin-bottom: -15px;
     /* border-width: 3px; */
     border-style: solid;
     border-image: linear-gradient( to bottom, #EC008C, #F15B2A, rgba(0, 0, 0, 0) ) 1 100%;
+    display: block;
+    
 }
 .text{
     color: white;
@@ -177,4 +188,86 @@ h5,.text>p{
 }
 #takeAlook:hover{
     font-weight: 900;
+}
+.burger{
+    display: none;
+ position: absolute;
+ top: 10px;   
+ right: 55px;
+  
+}
+.burger>.line{
+width: 33px;
+height: 3px;
+background-color: white;
+margin: 10px;
+}
+
+@media only screen and (max-width:826px) {
+    .navlist{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .left{
+    flex-direction: column;
+   }
+   .right{
+    flex-direction: column;
+    width: 46%;
+    margin:20px;
+   }
+   #search{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 120px;
+   }
+   .burger{
+    display: block;
+   }
+   .h-nav-resp{
+height: 40px;
+   }
+   .h-nav-resp2{
+    height: 350px;
+       }
+      
+.headLower{
+column-gap: 25px;
+row-gap: 20px;
+}
+.v-class-resp{
+    /* opacity: 0; */
+    visibility: hidden;
+}
+#search,#logosm{
+  opacity: 1;
+  visibility: visible;
+}
+.five-resp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.singleLine{
+    margin-top: 200px;
+}
+.nav{
+    transition: all0.7s ease-out;
+}
+
+}
+
+@media only screen and (max-width:600px){
+    .headLower{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #logosm{
+        width: 80%;
+    }
+    .h-nav-resp2{
+    height: 350px;
+       }
+       .nav{
+        transition: all0.7s ease-out;
+    }
 }
