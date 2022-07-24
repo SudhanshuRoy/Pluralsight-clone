@@ -1,0 +1,41 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+}
+.container>div:nth-child(1){
+padding: 20px;
+width: 20%;
+}
+.container>div:nth-child(1){
+    width: 80%;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 30%;
+    color: white;
+   
+    height:auto;
+    
+}
+form>input,form>label{
+    margin: 0px 20px;
+    
+    
+}
+form>label{
+  font-size: 20px; 
+  margin-top: 30px;
+}
+form>input{
+    padding: 12px;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    font-size: 18px;
+}
